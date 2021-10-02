@@ -1,5 +1,5 @@
 {
-  "name": "@cloudhub-ux/sails-eslint",
+  "name": "@cloudhub-js/sails-eslint",
   "version": "1.1.2",
   "description": "Add eslint linting utility to Sails JS",
   "main": "index.js",
