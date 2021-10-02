@@ -1,5 +1,5 @@
 {
-  "name": "sails-eslint",
+  "name": "@cloudhub-ux/sails-eslint",
   "version": "1.1.1",
   "description": "Add eslint linting utility to Sails JS",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasancheg/sails-eslint.git"
+    "url": "https://github.com/cloudhubke/sails-eslint.git"
   },
   "keywords": [
     "sails",
@@ -24,9 +24,9 @@
   "author": "Jose Antonio Sanchez <jasancheg@gmail.com> (http://inideaweb.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jasancheg/sails-eslint/issues"
+    "url": "https://github.com/cloudhubke/sails-eslint/issues"
   },
-  "homepage": "https://github.com/jasancheg/sails-eslint",
+  "homepage": "https://github.com/cloudhubke/sails-eslint",
   "dependencies": {
     "ansi-escapes": "^2.0.0",
     "chalk": "^1.1.3",
