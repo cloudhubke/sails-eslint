@@ -82,9 +82,9 @@ module.exports = function (sails) {
         paths = chalk.yellow('\n' + formatDirs.join('\n'));
       }
 
-      // Run First eslint Test
-      sails.log.verbose('ESlint watching', sails.config[this.configKey].dirs);
-      sails.log.info('ESlint watching...'); //, paths);
+      // // Run First eslint Test
+      // sails.log.verbose('ESlint watching', sails.config[this.configKey].dirs);
+      // sails.log.info('ESlint watching...'); //, paths);
 
       const tsLintOptions = sails.config[this.configKey].tslintOptions || {};
       const esLintOptions = sails.config[this.configKey].eslintOptions || {};
