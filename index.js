@@ -11,7 +11,8 @@
 // or reuse code because future releases of Sails--even patch releases--may cause
 // it to stop functioning, do not turn this hook on in production!
 /* eslint-disable no-unused-vars, consistent-this */
-
+const path = require('path');
+const chalk = require('chalk');
 const { runEslint, runTslint } = require('lint-js');
 
 module.exports = function (sails) {
