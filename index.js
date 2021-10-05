@@ -67,21 +67,8 @@ module.exports = function (sails) {
       if (sails.config.eslint && sails.config.eslint.dirs)
         this.configKey = 'eslint';
 
-      // Initialize the file watcher to watch controller and model dirs
-      var chokidar = require('chokidar');
-      // Watch both the controllers and models directories
-      var watcher = chokidar.watch(sails.config[this.configKey].dirs, {
-        // Ignore the initial "add" events which are generated when Chokidar
-        // starts watching files
-        ignoreInitial: true,
-        usePolling: sails.config[this.configKey].usePolling,
-        ignored: sails.config[this.configKey].ignored,
-      });
-
-      var format = sails.config[this.configKey].formatter || 'stylish';
       var dirs = sails.config[this.configKey].dirs || ['config', 'api'];
       var formatDirs = [];
-      var paths = '';
 
       if (sails.config[this.configKey].dirs) {
         sails.config[this.configKey].dirs.forEach(function (item) {
