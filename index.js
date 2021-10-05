@@ -35,6 +35,10 @@ module.exports = function (sails) {
         // choose which formatter to use
         // formatter: path.join(__dirname, "pretty-formatter"),
         // decide which folders/dirs should be checked
+        eslintOptions: {
+          format: 'stylish',
+        },
+        tslintOptions: {},
         dirs: [
           path.resolve(sails.config.appPath, 'config'),
           path.resolve(sails.config.appPath, 'api'),
