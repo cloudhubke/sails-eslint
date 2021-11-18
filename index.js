@@ -24,12 +24,13 @@ module.exports = function (sails) {
      * the hook is itself configurable, so we can't just return
      * an object.
      */
+
     defaults: {
       __configKey__: {
         // Turn eslint on/off
         runEsLint: true,
         // Turn eslint on/off
-        runTsLint: true,
+        runTsLint: false,
         //use polling to watch file changes
         //slower but sometimes needed for VM environments
         usePolling: false,
