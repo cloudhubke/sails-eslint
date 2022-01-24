@@ -13,7 +13,7 @@
 /* eslint-disable no-unused-vars, consistent-this */
 const path = require('path');
 const chalk = require('chalk');
-const { runEslint, runTslint } = require('lint-js');
+const { runEslint } = require('lint-js');
 
 module.exports = function (sails) {
   return {
@@ -29,8 +29,7 @@ module.exports = function (sails) {
       __configKey__: {
         // Turn eslint on/off
         runEsLint: true,
-        // Turn eslint on/off
-        runTsLint: false,
+
         //use polling to watch file changes
         //slower but sometimes needed for VM environments
         usePolling: false,
@@ -40,7 +39,6 @@ module.exports = function (sails) {
         eslintOptions: {
           format: 'stylish',
         },
-        tslintOptions: {},
         dirs: [
           path.resolve(sails.config.appPath, 'config'),
           path.resolve(sails.config.appPath, 'api'),
@@ -87,16 +85,12 @@ module.exports = function (sails) {
       // sails.log.verbose('ESlint watching', sails.config[this.configKey].dirs);
       // sails.log.info('ESlint watching...'); //, paths);
 
-      const tsLintOptions = sails.config[this.configKey].tslintOptions || {};
       const esLintOptions = sails.config[this.configKey].eslintOptions || {};
 
       if (process.env.NODE_ENV !== 'production') {
         sails.on('lifted', () => {
           if (sails.config[this.configKey].runEsLint) {
             runEslint(dirs, esLintOptions);
-          }
-          if (sails.config[this.configKey].runTsLint) {
-            runTslint(dirs, tsLintOptions);
           }
         });
       }
