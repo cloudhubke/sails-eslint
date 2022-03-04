@@ -1993,7 +1993,7 @@ eslint@^2.0.0:
     text-table "~0.2.0"
     user-home "^2.0.0"
 
-eslint@^7.2.0, eslint@^7.32.0:
+eslint@^7.32.0:
   version "7.32.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.32.0.tgz#c6d328a14be3fb08c8d1d21e12c02fdb7a2a812d"
   integrity sha512-VHZ8gX+EDfz+97jGcgyGCyRia/dPOd6Xh9yPv8Bl1+SoaIwD+a/vlrOmGRUyOYu7MwUhc7CxqeaDZU13S4+EpA==
@@ -4011,13 +4011,12 @@ liftoff@^3.1.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
-lint-js@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/lint-js/-/lint-js-1.0.3.tgz#16be7159fee4b8c48769b960ae6347c53b550c45"
-  integrity sha512-12hu/OF4jcOW6n6fxq+JwgTTDTJEejcaUL9yMAfc66pgmkFr8qgiJ1kLPLhBlOq8v4gthPDX32hludPsZ8eFdQ==
+lint-js@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/lint-js/-/lint-js-1.0.4.tgz#afd8f5d541df29d9fe9a08af028ad76c619b6c33"
+  integrity sha512-mgR+vVm8N09m7ZjDuKA1juk+LnrbY412pnHUbvw3yhonQgm5oh17uMJBeKhfZ7jp/LuyDIoEEQYsYOYXpqpLpA==
   dependencies:
     chalk "^4.1.2"
-    eslint "^7.2.0"
     glob "^7.2.0"
     gulp "^4.0.2"
 

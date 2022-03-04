@@ -1,6 +1,6 @@
 {
   "name": "@cloudhub-js/sails-eslint",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "Add eslint linting utility to Sails JS",
   "main": "index.js",
   "directories": {
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/cloudhubke/sails-eslint",
   "dependencies": {
     "ansi-escapes": "^2.0.0",
-    "lint-js": "^1.0.3",
+    "lint-js": "^1.0.4",
     "log-symbols": "^1.0.2",
     "plur": "^2.1.2",
     "repeating": "^3.0.0",
