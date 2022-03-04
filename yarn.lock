@@ -4011,10 +4011,10 @@ liftoff@^3.1.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
-lint-js@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/lint-js/-/lint-js-1.0.2.tgz#5b13990a32e4c689aa6cb1b58cd3d1060b6bb426"
-  integrity sha512-XxrWsKiWQMtZH3QqhABSq3DaB3sznAEsH7GdihSge6kEuISY/a+tEBVD+Toq6cQsnpJgY81V8aV7z/if1wYhyQ==
+lint-js@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/lint-js/-/lint-js-1.0.3.tgz#16be7159fee4b8c48769b960ae6347c53b550c45"
+  integrity sha512-12hu/OF4jcOW6n6fxq+JwgTTDTJEejcaUL9yMAfc66pgmkFr8qgiJ1kLPLhBlOq8v4gthPDX32hludPsZ8eFdQ==
   dependencies:
     chalk "^4.1.2"
     eslint "^7.2.0"
